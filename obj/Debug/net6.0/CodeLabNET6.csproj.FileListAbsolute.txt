@@ -30,3 +30,13 @@ C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\obj\Debug\net6.0\refi
 C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\obj\Debug\net6.0\CodeLabNET6.pdb
 C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\obj\Debug\net6.0\CodeLabNET6.genruntimeconfig.cache
 C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\obj\Debug\net6.0\ref\CodeLabNET6.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\Humanizer.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\luizf\OneDrive\Documentos\Development\CodeLabNET6\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
