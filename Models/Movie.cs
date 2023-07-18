@@ -4,6 +4,7 @@ namespace CodeLabNET6.Models
 {
     public class Movie
     {
+        [Key]
         public Guid Id { get; set; }
         [Required(ErrorMessage = "The title is required")]
         [MaxLength(50, ErrorMessage = "Title has a maximum of 50 characteres")]

@@ -1,4 +1,5 @@
-﻿using CodeLabNET6.Models;
+﻿using CodeLabNET6.Data;
+using CodeLabNET6.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodeLabNET6.Controllers
@@ -7,24 +8,34 @@ namespace CodeLabNET6.Controllers
     [Route("[controller]")]
     public class MovieController : ControllerBase
     {
-        private static List<Movie> movies = new List<Movie>();
+        private MovieContext _context;
+
+        public MovieController(MovieContext context)
+        {
+            _context = context;
+        }
+
         [HttpPost]
         public IActionResult AdicionaFilme([FromBody] Movie movie)
         {
-            movie.Id = Guid.NewGuid();
-            movies.Add(movie);
-            return CreatedAtAction(nameof(GetMovieById), new { id = movie.Id });
+
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
+
+            return CreatedAtAction(nameof(GetMovieById),new {id = movie.Id }, movie);
         }
         [HttpGet]
+        // Property [FromQuery] used to pagination
         public IEnumerable<Movie> GetMovies([FromQuery] int skip = 0, [FromQuery] int take = 10 )
         {
-            return movies.Skip(skip).Take(take);
+            
+            return _context.Movies.Skip(skip).Take(take);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetMovieById(Guid id)
         {
-            var movie = movies.FirstOrDefault(movie => movie.Id == id);
+            var movie = _context.Movies.FirstOrDefault(movie => movie.Id == id);
             if (movie == null) return NotFound();
             return Ok(movie);
         }
